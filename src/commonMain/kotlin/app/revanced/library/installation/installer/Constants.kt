@@ -56,9 +56,13 @@ internal object Constants {
 
         chcon $SELINUX_CONTEXT ${'$'}base_path
 
-        # Use Magisk mirror, if possible.
+        # Mount using Magisk mirror, if available.
         if command -v magisk &> /dev/null; then
-            MIRROR="${'$'}(magisk --path)/.magisk/mirror"
+            MAGISKTMP="${'$'}(magisk --path)" || MAGISKTMP=/sbin
+            MIRROR="${'$'}MAGISKTMP/.magisk/mirror"
+            if [ -z "$(ls -A "${'$'}MIRROR" 2>/dev/null)" ]; then
+                MIRROR=""
+            fi
         fi
 
         mount -o bind ${'$'}MIRROR${'$'}base_path ${'$'}stock_path
