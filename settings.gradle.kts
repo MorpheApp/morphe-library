@@ -1,5 +1,5 @@
 // TODO: Figure out why this causes problems.
-rootProject.name = "revanced-library"
+rootProject.name = "morphe-library"
 
 buildCache {
     local {

@@ -177,7 +177,7 @@ object ApkUtils {
     class KeyStoreDetails(
         val keyStore: File,
         val keyStorePassword: String? = null,
-        val alias: String = "ReVanced Key",
+        val alias: String = "Morphe Key",
         val password: String = "",
     )
 
@@ -188,7 +188,7 @@ object ApkUtils {
      * @param validUntil The date until which the certificate is valid.
      */
     class PrivateKeyCertificatePairDetails(
-        val commonName: String = "ReVanced",
+        val commonName: String = "Morphe",
         val validUntil: Date = Date(System.currentTimeMillis() + (365.days * 8).inWholeMilliseconds * 24),
     )
 }

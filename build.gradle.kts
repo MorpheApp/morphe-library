@@ -9,15 +9,24 @@ plugins {
     signing
 }
 
-group = "app.revanced"
+group = "app.morphes"
 
 // Because access to the project is necessary to authenticate with GitHub,
 // the following block must be placed in the root build.gradle.kts file
 // instead of the settings.gradle.kts file inside the dependencyResolutionManagement block.
 repositories {
-    mavenCentral()
     mavenLocal()
+    mavenCentral()
     google()
+    maven {
+        // A repository must be specified for some reason. "registry" is a dummy.
+        url = uri("https://maven.pkg.github.com/MorpheApp/registry")
+        credentials {
+            username = project.findProperty("gpr.user") as String? ?: System.getenv("GITHUB_ACTOR")
+            password = project.findProperty("gpr.key") as String? ?: System.getenv("GITHUB_TOKEN")
+        }
+    }
+    // FIXME: This is required for forked APKTool. Replace this with Morphe release.
     maven {
         // A repository must be specified for some reason. "registry" is a dummy.
         url = uri("https://maven.pkg.github.com/revanced/registry")
@@ -59,18 +68,18 @@ kotlin {
             implementation(libs.jadb)
             implementation(libs.kotlin.reflect)
             implementation(libs.kotlinx.serialization.json)
-            implementation(libs.revanced.patcher)
+            implementation(libs.morphe.patcher)
         }
 
         commonTest.dependencies {
             implementation(libs.kotlin.test.junit)
-            implementation(libs.revanced.patcher)
+            implementation(libs.morphe.patcher)
         }
     }
 }
 
 android {
-    namespace = "app.revanced.library"
+    namespace = "app.morphe.library"
     compileSdk = 34
     defaultConfig {
         minSdk = 26
@@ -94,7 +103,7 @@ publishing {
     repositories {
         maven {
             name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/revanced/revanced-library")
+            url = uri("https://maven.pkg.github.com/MorpheApp/morphe-library")
             credentials {
                 username = project.findProperty("gpr.user") as String? ?: System.getenv("GITHUB_ACTOR")
                 password = project.findProperty("gpr.key") as String? ?: System.getenv("GITHUB_TOKEN")
@@ -107,29 +116,30 @@ publishing {
         if (this !is MavenPublication) return@all
 
         pom {
-            name = "ReVanced Library"
-            description = "Library containing common utilities for ReVanced"
-            url = "https://revanced.app"
+            name = "Morphe Library"
+            description = "Library containing common utilities for Morphe"
+            url = "https://morphe.software"
 
             licenses {
                 license {
                     name = "GNU General Public License v3.0"
                     url = "https://www.gnu.org/licenses/gpl-3.0.en.html"
+                    comments = "Additional conditions under GPL section 7 apply: attribution and project name restrictions. See LICENSE file."
                 }
             }
 
             developers {
                 developer {
-                    id = "ReVanced"
-                    name = "ReVanced"
-                    email = "contact@revanced.app"
+                    id = "Morphe"
+                    name = "Morphe"
+                    email = "contact@morphe.software"
                 }
             }
 
             scm {
-                connection = "scm:git:git://github.com/revanced/revanced-library.git"
-                developerConnection = "scm:git:git@github.com:revanced/revanced-library.git"
-                url = "https://github.com/revanced/revanced-library"
+                connection = "scm:git:git://github.com/MorpheApp/morphe-library.git"
+                developerConnection = "scm:git:git@github.com:MorpheApp/morphe-library.git"
+                url = "https://github.com/MorpheApp/morphe-library"
             }
         }
     }
