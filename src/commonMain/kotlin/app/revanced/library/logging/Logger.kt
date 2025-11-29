@@ -12,7 +12,9 @@ object Logger {
      */
     private val allowedLoggersRules =
         arrayOf<String.() -> Boolean>(
-            //  ReVanced loggers.
+            //  Morphe loggers.
+            { startsWith("app.morphe") },
+            // Any legacy code.
             { startsWith("app.revanced") },
             // Logs warnings when compiling resources (Logger in class brut.util.OS).
             { this == "" },
