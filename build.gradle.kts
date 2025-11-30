@@ -9,7 +9,7 @@ plugins {
     signing
 }
 
-group = "app.morphes"
+group = "app.morphe"
 
 // Because access to the project is necessary to authenticate with GitHub,
 // the following block must be placed in the root build.gradle.kts file
