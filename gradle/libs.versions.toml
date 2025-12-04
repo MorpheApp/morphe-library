@@ -3,13 +3,13 @@ android = "8.5.2"
 bcpkix-jdk18on = "1.77"
 binary-compatibility-validator = "0.15.1"
 core-ktx = "1.15.0"
-guava = "33.2.1-jre"
+guava = "33.5.0-jre"
 jadb = "1.2.1"
-kotlin = "2.0.20"
-kotlinx-coroutines = "1.8.1"
+kotlin = "2.0.21"
+kotlinx-coroutines-core = "1.10.2"
 kotlinx-serialization = "1.7.1"
 libsu = "5.2.2"
-morphe-patcher = "1.0.0-dev.1"
+morphe-patcher = "1.0.0"
 
 [libraries]
 apkzlib = { module = "com.android.tools.build:apkzlib", version.ref = "android" }
@@ -21,7 +21,7 @@ guava = { module = "com.google.guava:guava", version.ref = "guava" }
 jadb = { module = "app.revanced:jadb", version.ref = "jadb" } # Fork with Shell v2 support.
 kotlin-reflect = { module = "org.jetbrains.kotlin:kotlin-reflect", version.ref = "kotlin" }
 kotlin-test-junit = { module = "org.jetbrains.kotlin:kotlin-test-junit", version.ref = "kotlin" }
-kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx-coroutines" }
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx-coroutines-core" }
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinx-serialization" }
 libsu-core = { module = "com.github.topjohnwu.libsu:core", version.ref = "libsu" }
 libsu-nio = { module = "com.github.topjohnwu.libsu:nio", version.ref = "libsu" }
