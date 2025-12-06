@@ -9,6 +9,7 @@ buildCache {
 
 pluginManagement {
     repositories {
+        mavenLocal()
         google()
         mavenCentral()
     }
