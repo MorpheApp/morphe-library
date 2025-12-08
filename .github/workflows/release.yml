@@ -57,9 +57,4 @@ jobs:
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GPR_USER: ${{ secrets.GPR_USER }}
-          GPR_TOKEN: ${{ secrets.GPR_TOKEN }}
-        run: npm exec semantic-release -Pgpr.user=${{ env.GPR_USER }} -Pgpr.key=${{ env.GPR_TOKEN }}
-#        env:
-#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-#        run: npm exec semantic-release
+        run: npm exec semantic-release
