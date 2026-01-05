@@ -25,6 +25,8 @@ Morphe Library powers projects such as [Morphe Manager](https://github.com/Morph
 [Morphe CLI](https://github.com/MorpheApp/morphe-cli) with common utilities and functionalities
 by providing shared code.
 
+Morphe Library is based off the work of [ReVanced](https://github.com/ReVanced/revanced-library). All modifications made by Morphe, along with their dates, can be found in the Git history.
+
 ## 💪 Features
 
 Some of the features the Morphe Library provides are:
