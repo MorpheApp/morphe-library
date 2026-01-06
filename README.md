@@ -25,6 +25,8 @@ Morphe Library powers projects such as [Morphe Manager](https://github.com/Morph
 [Morphe CLI](https://github.com/MorpheApp/morphe-cli) with common utilities and functionalities
 by providing shared code.
 
+Morphe Library is based off the prior work of [ReVanced](https://github.com/ReVanced/revanced-library). All modifications made by Morphe, along with their dates, can be found in the Git history.
+
 ## 💪 Features
 
 Some of the features the Morphe Library provides are:
@@ -65,9 +67,9 @@ you can follow the [Morphe documentation](https://github.com/MorpheApp/morphe-do
 
 ## 📜 License
 
-Morphe Patches are licensed under the [GNU General Public License v3.0](LICENSE), with additional conditions under GPLv3 Section 7:
+Morphe Library is licensed under the [GNU General Public License v3.0](LICENSE), with additional conditions under GPLv3 Section 7:
 
 - **Name Restriction (7c):** The name **"Morphe"** may not be used for derivative works.  
   Derivatives must adopt a distinct identity unrelated to "Morphe."
 
-See the [LICENSE](LICENSE) file for the full GPLv3 terms and the [NOTICE](NOTICE) file for full conditions of GPLv3 Section 7
+See the [LICENSE](LICENSE) file for the full GPLv3 terms and the [NOTICE](NOTICE) file for full conditions of GPLv3 Section 7.
