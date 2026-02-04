@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/MorpheApp/morphe-library/compare/v1.1.0...v1.2.0) (2026-02-04)
+
+
+### Features
+
+* Update to Morphe patcher `1.1.1` ([2a6030e](https://github.com/MorpheApp/morphe-library/commit/2a6030ebffc2085cab4e6440b01c5ecd865a0f02))
+
 # [1.2.0-dev.1](https://github.com/MorpheApp/morphe-library/compare/v1.1.0...v1.2.0-dev.1) (2026-02-04)
 
 
