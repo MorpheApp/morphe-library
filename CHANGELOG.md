@@ -1,3 +1,10 @@
+## [1.2.1-dev.3](https://github.com/MorpheApp/morphe-library/compare/v1.2.1-dev.2...v1.2.1-dev.3) (2026-02-25)
+
+
+### Bug Fixes
+
+* Use latest Morphe patcher dev ([23e78b5](https://github.com/MorpheApp/morphe-library/commit/23e78b5a3a0e58cfcc35d75d2832177f718a46c9))
+
 ## [1.2.1-dev.2](https://github.com/MorpheApp/morphe-library/compare/v1.2.1-dev.1...v1.2.1-dev.2) (2026-02-24)
 
 
