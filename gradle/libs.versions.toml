@@ -9,7 +9,7 @@ kotlin = "2.0.21"
 kotlinx-coroutines-core = "1.10.2"
 kotlinx-serialization = "1.7.1"
 libsu = "5.2.2"
-morphe-patcher = "1.2.0-dev.5" # TODO: change to 1.2.0 before stable release
+morphe-patcher = "1.2.0-dev.6" # TODO: change to 1.2.0 before stable release
 
 [libraries]
 apkzlib = { module = "com.android.tools.build:apkzlib", version.ref = "android" }
