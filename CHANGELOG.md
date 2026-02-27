@@ -1,3 +1,10 @@
+## [1.2.1-dev.5](https://github.com/MorpheApp/morphe-library/compare/v1.2.1-dev.4...v1.2.1-dev.5) (2026-02-27)
+
+
+### Bug Fixes
+
+* Close dex file stream ([#26](https://github.com/MorpheApp/morphe-library/issues/26)) ([44289d6](https://github.com/MorpheApp/morphe-library/commit/44289d6e646e5c0f267fd68dc1adc68bc812268c))
+
 ## [1.2.1-dev.4](https://github.com/MorpheApp/morphe-library/compare/v1.2.1-dev.3...v1.2.1-dev.4) (2026-02-26)
 
 
