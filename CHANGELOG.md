@@ -1,3 +1,10 @@
+# [1.3.0-dev.1](https://github.com/MorpheApp/morphe-library/compare/v1.2.1-dev.5...v1.3.0-dev.1) (2026-02-28)
+
+
+### Features
+
+* Decouple morphe-library and morphe-patcher ([#27](https://github.com/MorpheApp/morphe-library/issues/27)) ([0e42556](https://github.com/MorpheApp/morphe-library/commit/0e42556ee103e0303e3ad50e00371419a6e03238))
+
 ## [1.2.1-dev.5](https://github.com/MorpheApp/morphe-library/compare/v1.2.1-dev.4...v1.2.1-dev.5) (2026-02-27)
 
 
