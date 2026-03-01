@@ -1,5 +1,5 @@
 [versions]
-android = "8.5.2"
+android = "9.0.1"
 binary-compatibility-validator = "0.15.1"
 core-ktx = "1.15.0"
 guava = "33.5.0-jre"
