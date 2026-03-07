@@ -52,19 +52,13 @@ kotlin {
         }
 
         commonMain.dependencies {
-            implementation(libs.apksig)
-            implementation(libs.apkzlib)
-            implementation(libs.bcpkix.jdk18on)
             implementation(libs.guava)
             implementation(libs.jadb)
             implementation(libs.kotlin.reflect)
-            implementation(libs.kotlinx.serialization.json)
-            implementation(libs.morphe.patcher)
         }
 
         commonTest.dependencies {
             implementation(libs.kotlin.test.junit)
-            implementation(libs.morphe.patcher)
         }
     }
 }

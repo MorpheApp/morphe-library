@@ -1,3 +1,45 @@
+# [1.3.0-dev.1](https://github.com/MorpheApp/morphe-library/compare/v1.2.1-dev.5...v1.3.0-dev.1) (2026-02-28)
+
+
+### Features
+
+* Decouple morphe-library and morphe-patcher ([#27](https://github.com/MorpheApp/morphe-library/issues/27)) ([0e42556](https://github.com/MorpheApp/morphe-library/commit/0e42556ee103e0303e3ad50e00371419a6e03238))
+
+## [1.2.1-dev.5](https://github.com/MorpheApp/morphe-library/compare/v1.2.1-dev.4...v1.2.1-dev.5) (2026-02-27)
+
+
+### Bug Fixes
+
+* Close dex file stream ([#26](https://github.com/MorpheApp/morphe-library/issues/26)) ([44289d6](https://github.com/MorpheApp/morphe-library/commit/44289d6e646e5c0f267fd68dc1adc68bc812268c))
+
+## [1.2.1-dev.4](https://github.com/MorpheApp/morphe-library/compare/v1.2.1-dev.3...v1.2.1-dev.4) (2026-02-26)
+
+
+### Bug Fixes
+
+* Use latest Morphe patcher dev ([2f7d437](https://github.com/MorpheApp/morphe-library/commit/2f7d4373ad30a1aacc17555959a6832c8f834669))
+
+## [1.2.1-dev.3](https://github.com/MorpheApp/morphe-library/compare/v1.2.1-dev.2...v1.2.1-dev.3) (2026-02-25)
+
+
+### Bug Fixes
+
+* Use latest Morphe patcher dev ([23e78b5](https://github.com/MorpheApp/morphe-library/commit/23e78b5a3a0e58cfcc35d75d2832177f718a46c9))
+
+## [1.2.1-dev.2](https://github.com/MorpheApp/morphe-library/compare/v1.2.1-dev.1...v1.2.1-dev.2) (2026-02-24)
+
+
+### Bug Fixes
+
+* Use latest Morphe patcher dev ([a1465c6](https://github.com/MorpheApp/morphe-library/commit/a1465c6894b4820a77c33ef0ca51e8e49462089e))
+
+## [1.2.1-dev.1](https://github.com/MorpheApp/morphe-library/compare/v1.2.0...v1.2.1-dev.1) (2026-02-21)
+
+
+### Bug Fixes
+
+* Use Morphe patcher 1.2.0 ([dfbe1f0](https://github.com/MorpheApp/morphe-library/commit/dfbe1f00da55ae4f22ffad011a030e3d848a92b2))
+
 # [1.2.0](https://github.com/MorpheApp/morphe-library/compare/v1.1.0...v1.2.0) (2026-02-04)
 
 
