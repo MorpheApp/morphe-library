@@ -1,7 +1,7 @@
 [versions]
 android = "8.9.1"
 binary-compatibility-validator = "0.15.1"
-core-ktx = "1.15.0"
+core-ktx = "1.18.0"
 guava = "33.5.0-jre"
 jadb = "1.2.1"
 kotlin = "2.0.21"
