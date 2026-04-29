@@ -20,7 +20,10 @@ jobs:
         uses: burrunan/gradle-cache-action@v1
 
       - name: Setup Java
-        run: echo "JAVA_HOME=$JAVA_HOME_17_X64" >> $GITHUB_ENV
+        uses: actions/setup-java@v5
+        with:
+          distribution: 'temurin'
+          java-version: '21'
 
       - name: Build
         env:
