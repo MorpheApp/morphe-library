@@ -3,7 +3,7 @@ android = "8.9.3"
 binary-compatibility-validator = "0.18.1"
 core-ktx = "1.18.0"
 guava = "33.5.0-jre"
-jadb = "1.2.1"
+jadb = "1.2.3"
 kotlin = "2.2.21"
 libsu = "5.2.2"
 
