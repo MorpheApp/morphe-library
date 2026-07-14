@@ -22,7 +22,7 @@ Library containing common utilities for Morphe.
 ## ❓ About
 
 Morphe Library powers projects such as [Morphe Manager](https://github.com/MorpheApp/morphe-manager),
-[Morphe CLI](https://github.com/MorpheApp/morphe-cli) with common utilities and functionalities
+[Morphe Desktop](https://github.com/MorpheApp/morphe-desktop) with common utilities and functionalities
 by providing shared code.
 
 Morphe Library is based off the prior work of [ReVanced](https://github.com/ReVanced/revanced-library). All modifications made by Morphe, along with their dates, can be found in the Git history.
