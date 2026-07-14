@@ -69,7 +69,6 @@ you can follow the [Morphe documentation](https://github.com/MorpheApp/morphe-do
 
 Morphe Library is licensed under the [GNU General Public License v3.0](LICENSE), with additional conditions under GPLv3 Section 7:
 
-- **Name Restriction (7c):** The name **"Morphe"** may not be used for derivative works.  
-  Derivatives must adopt a distinct identity unrelated to "Morphe".
+- **Name & Branding Restrictions (7c & 7e):** Derivative works must use their own distinct branding. The **"Morphe"** name, logos, and trademarks may not be used for the branding or title of derivative works.
 
 See the [LICENSE](LICENSE) file for the full GPLv3 terms and the [NOTICE](NOTICE) file for full conditions of GPLv3 Section 7.
