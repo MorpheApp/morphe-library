@@ -1,3 +1,10 @@
+# [1.5.0-dev.1](https://github.com/MorpheApp/morphe-library/compare/v1.4.0...v1.5.0-dev.1) (2026-11-25)
+
+
+### Features
+
+* Recompile mounted apps and fix mounts on newer Magisk ([#69](https://github.com/MorpheApp/morphe-library/issues/69)) ([4a7421c](https://github.com/MorpheApp/morphe-library/commit/4a7421c989f3ede794710dca6bb34c3e3aeca4c8)), closes [MorpheApp/morphe-patcher#299](https://github.com/MorpheApp/morphe-patcher/issues/299)
+
 # [1.4.0](https://github.com/MorpheApp/morphe-library/compare/v1.3.0...v1.4.0) (2026-07-14)
 
 
