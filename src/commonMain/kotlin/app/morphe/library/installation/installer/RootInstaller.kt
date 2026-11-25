@@ -12,7 +12,6 @@ import app.morphe.library.installation.installer.Constants.MOUNT_APK
 import app.morphe.library.installation.installer.Constants.MOUNT_GREP
 import app.morphe.library.installation.installer.Constants.MOUNT_SCRIPT
 import app.morphe.library.installation.installer.Constants.MOUNT_SCRIPT_PATH
-import app.morphe.library.installation.installer.Constants.RECOMPILE
 import app.morphe.library.installation.installer.Constants.RESTART
 import app.morphe.library.installation.installer.Constants.TMP_FILE_PATH
 import app.morphe.library.installation.installer.Constants.UMOUNT
@@ -62,7 +61,6 @@ abstract class RootInstaller internal constructor(
         TMP_FILE_PATH.write(MOUNT_SCRIPT(packageName))
         INSTALL_MOUNT_SCRIPT(packageName)().waitFor()
         MOUNT_SCRIPT_PATH(packageName)().waitFor()
-        RECOMPILE(packageName)().waitFor()
         RESTART(packageName)()
 
         DELETE(TMP_FILE_PATH)()
@@ -77,14 +75,13 @@ abstract class RootInstaller internal constructor(
     override suspend fun uninstall(packageName: String): RootInstallerResult {
         logger.info("Uninstalling $packageName by unmounting")
 
-        UMOUNT(packageName)().waitFor()
+        UMOUNT(packageName)()
 
         DELETE(MOUNTED_APK_PATH)(packageName)()
         DELETE(MOUNT_SCRIPT_PATH)(packageName)()
         DELETE(TMP_FILE_PATH)() // Remove residual.
 
-        KILL(packageName)().waitFor()
-        RECOMPILE(packageName)().waitFor()
+        KILL(packageName)()
 
         return RootInstallerResult.SUCCESS
     }
