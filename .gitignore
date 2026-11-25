@@ -9,3 +9,5 @@ captures
 local.properties
 xcuserdata
 node_modules/
+# Written by the IDE for the local Gradle daemon
+gradle/gradle-daemon-jvm.properties
